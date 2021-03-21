@@ -199,6 +199,8 @@ class License extends SourceTask implements VerificationTask {
         return definitions
     }
 
+    @Optional
+    @Input
     Map<String, String> internalMappings = new HashMap<String, String>()
 
     void mapping(String fileType, String headerType) {
